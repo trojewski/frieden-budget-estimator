@@ -1,0 +1,37 @@
+.root {
+  margin-bottom: 1.25rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin: 0 0 0.25rem;
+  color: #0d0d0d;
+}
+
+.caption {
+  font-size: 0.8125rem;
+  color: #5c5a57;
+  margin: 0;
+  font-weight: 500;
+}
+
+.vendorLink {
+  color: inherit;
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: rgba(92, 90, 87, 0.45);
+  text-underline-offset: 0.12em;
+}
+
+.vendorLink:hover {
+  color: #303D4D;
+  text-decoration-color: rgba(48, 61, 77, 0.55);
+}
+
+.vendorLink:focus-visible {
+  outline: 2px solid #303D4D;
+  outline-offset: 2px;
+  border-radius: 0.15rem;
+}

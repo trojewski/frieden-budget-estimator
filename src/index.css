@@ -1,0 +1,57 @@
+@font-face {
+  font-family: "Albert Sans";
+  src: url("/fonts/albert-sans/AlbertSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Albert Sans";
+  src: url("/fonts/albert-sans/AlbertSans-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Albert Sans";
+  src: url("/fonts/albert-sans/AlbertSans-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Albert Sans";
+  src: url("/fonts/albert-sans/AlbertSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Albert Sans", system-ui, -apple-system, sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: #1a1a1a;
+  background: linear-gradient(160deg, #f6f4f1 0%, #e8e4de 100%);
+}
+
+#root {
+  min-height: 100vh;
+  padding: clamp(1.5rem, 4vw, 3rem);
+  max-width: 56rem;
+  margin: 0 auto;
+}

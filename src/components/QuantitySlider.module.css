@@ -1,0 +1,127 @@
+.root {
+  margin-bottom: 1.5rem;
+}
+
+.row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #6b6864;
+}
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: flex-end;
+  gap: 0.5rem 1rem;
+  text-align: right;
+}
+
+.qtyValue {
+  font-size: 1.25rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  color: #0d0d0d;
+}
+
+.ppu {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #3d3b38;
+  font-variant-numeric: tabular-nums;
+}
+
+.ppuLabel {
+  font-weight: 400;
+  color: #8a8782;
+  font-size: 0.8125rem;
+}
+
+.range {
+  width: 100%;
+  height: 0.5rem;
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  margin: 0;
+  padding: 0.25rem 0;
+  cursor: pointer;
+}
+
+.range:focus {
+  outline: none;
+}
+
+.range:focus-visible {
+  outline: 2px solid #303D4D;
+  outline-offset: 2px;
+  border-radius: 0.25rem;
+}
+
+/* Track */
+.range::-webkit-slider-runnable-track {
+  height: 0.35rem;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #C5CDD4 0%, #303D4D 100%);
+}
+
+.range::-moz-range-track {
+  height: 0.35rem;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #C5CDD4 0%, #303D4D 100%);
+}
+
+/* Thumb */
+.range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 1.125rem;
+  height: 1.125rem;
+  margin-top: -0.4rem;
+  border-radius: 50%;
+  background: #1a1a1a;
+  border: 2px solid #f6f4f1;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.range::-moz-range-thumb {
+  width: 1.125rem;
+  height: 1.125rem;
+  border: 2px solid #f6f4f1;
+  border-radius: 50%;
+  background: #1a1a1a;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.ticks {
+  position: relative;
+  height: 0.5rem;
+  margin-top: -0.1rem;
+}
+
+.tick,
+.tickActive {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  margin-left: 0;
+  top: 0;
+  background: #b8b5b0;
+}
+
+.tickActive {
+  background: #303D4D;
+  transform: translateX(-50%) scale(1.2);
+}
