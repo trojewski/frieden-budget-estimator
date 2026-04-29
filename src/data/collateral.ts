@@ -1,6 +1,6 @@
 /**
  * Sourced from sample-content-2.docx, sample-content.docx, Untitled document.docx,
- * and Untitled document (1).docx (Matchbox).
+ * Untitled document (1).docx (Matchbox), and Untitled document (2).docx (Envelope).
  * Notepads: sample-content-2 merged 250$4.00 and 500$3.75 as "250$4500$3.75"; restored as 250 @ $4.00, 500 @ $3.75.
  */
 export const COLLATERAL_ITEMS = [
@@ -19,6 +19,22 @@ export const COLLATERAL_ITEMS = [
       { quantity: 1500, pricePerUnit: 0.27 },
       { quantity: 2500, pricePerUnit: 0.24 },
       { quantity: 10000, pricePerUnit: 0.2 },
+    ],
+  },
+  {
+    id: "envelope",
+    title: "Envelope",
+    vendor: {
+      name: "Envelopes.com",
+      href: "https://www.envelopes.com/envelopes-white-booklet-10-4-1-8x9-1-2-white-peel-and-seal-item-75746",
+    },
+    pricing: [
+      { quantity: 50, pricePerUnit: 0.44 },
+      { quantity: 100, pricePerUnit: 0.44 },
+      { quantity: 250, pricePerUnit: 0.44 },
+      { quantity: 500, pricePerUnit: 0.36 },
+      { quantity: 750, pricePerUnit: 0.36 },
+      { quantity: 1000, pricePerUnit: 0.36 },
     ],
   },
   {
