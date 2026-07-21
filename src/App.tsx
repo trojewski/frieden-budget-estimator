@@ -68,7 +68,11 @@ export default function App() {
           draggable={false}
         />
         <h1 className={styles.pageTitle}>Budget Estimator</h1>
-        <p className={styles.lede}>Adjust quantities to estimate your collateral spend.</p>
+        <p className={styles.lede}>
+          Adjust quantities to estimate your collateral spend. Prices are
+          snapshots from July 21, 2026—not real-time quotes—and may have
+          changed. Check vendor links for current pricing.
+        </p>
       </header>
       <div className={styles.layout}>
         <div className={styles.primary}>
@@ -95,8 +99,7 @@ export default function App() {
                   <CollateralItemLabel
                     titleId={titleId}
                     title={item.title}
-                    vendorName={item.vendor.name}
-                    vendorHref={item.vendor.href}
+                    productUrl={item.url}
                   />
                   <QuantitySlider
                     id={`${item.id}-quantity`}

@@ -2,16 +2,14 @@ import styles from "./CollateralItemLabel.module.css";
 
 export type CollateralItemLabelProps = {
   title: string;
-  vendorName: string;
-  vendorHref: string;
+  productUrl: string;
   /** For `aria-labelledby` on a surrounding section */
   titleId?: string;
 };
 
 export function CollateralItemLabel({
   title,
-  vendorName,
-  vendorHref,
+  productUrl,
   titleId,
 }: CollateralItemLabelProps) {
   return (
@@ -20,14 +18,13 @@ export function CollateralItemLabel({
         {title}
       </h2>
       <p className={styles.caption}>
-        From{" "}
         <a
           className={styles.vendorLink}
-          href={vendorHref}
+          href={productUrl}
           target="_blank"
           rel="noopener noreferrer"
         >
-          {vendorName}
+          View product
         </a>
       </p>
     </div>
